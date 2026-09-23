@@ -127,7 +127,7 @@ body {
 
 .scroll-indicator {
     position: absolute;
-    bottom: 3rem;
+    bottom: 1rem; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,7 +389,9 @@ body {
         margin-bottom: 2rem;
         padding: 0 1rem;
     }
-
+.scroll-indicator {
+        bottom: 1rem;
+    }
     .portfolio {
         padding: 3rem 1rem;
     }
