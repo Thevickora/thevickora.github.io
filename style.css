@@ -130,45 +130,52 @@ body {
 }
 
 .hero-title .letter.highlight {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
     font-weight: 800;
+    position: relative;
+    display: inline-block;
 }
 
-.hero-title .letter:nth-child(1) { animation-delay: 0s; }
-.hero-title .letter:nth-child(2) { animation-delay: 0.05s; }
-.hero-title .letter:nth-child(3) { animation-delay: 0.1s; }
-.hero-title .letter:nth-child(4) { animation-delay: 0.15s; }
-.hero-title .letter:nth-child(5) { animation-delay: 0.2s; }
-.hero-title .letter:nth-child(6) { animation-delay: 0.25s; }
-.hero-title .letter:nth-child(7) { animation-delay: 0.3s; }
-.hero-title .letter:nth-child(8) { animation-delay: 0.35s; }
-.hero-title .letter:nth-child(9) { animation-delay: 0.4s; }
-.hero-title .letter:nth-child(10) { animation-delay: 0.45s; }
-.hero-title .letter:nth-child(11) { animation-delay: 0.5s; }
-.hero-title .letter:nth-child(12) { animation-delay: 0.55s; }
-.hero-title .letter:nth-child(13) { animation-delay: 0.6s; }
-.hero-title .letter:nth-child(14) { animation-delay: 0.65s; }
-.hero-title .letter:nth-child(15) { animation-delay: 0.7s; }
-.hero-title .letter:nth-child(16) { animation-delay: 0.75s; }
-.hero-title .letter:nth-child(17) { animation-delay: 0.8s; }
-.hero-title .letter:nth-child(18) { animation-delay: 0.85s; }
+.hero-title .letter.highlight::before,
+.hero-title .letter.highlight::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-@keyframes bounceIn {
-    0% {
-        opacity: 0;
-        transform: translateY(30px) scale(0.8);
-    }
-    60% {
-        opacity: 1;
-        transform: translateY(-8px) scale(1.1);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+.hero-title .letter.highlight::before {
+    color: #ff0000;
+    z-index: -1;
+    animation: glitchLeft 0.4s infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+
+.hero-title .letter.highlight::after {
+    color: #00ffff;
+    z-index: -2;
+    animation: glitchRight 0.4s infinite;
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchLeft {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(-3px); }
+    60% { transform: translateX(-7px); }
+    80% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes glitchRight {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(5px); }
+    40% { transform: translateX(3px); }
+    60% { transform: translateX(7px); }
+    80% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
 }
 
 .hero-subtitle {
