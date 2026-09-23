@@ -125,34 +125,6 @@ body {
     }
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: 1rem; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--text-tertiary);
-    font-size: 0.75rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    animation: fadeInUp 1s ease 0.6s backwards;
-    z-index: 2;
-}
-
-.scroll-line {
-    width: 1px;
-    height: 40px;
-    background: linear-gradient(to bottom, var(--text-tertiary), transparent);
-    animation: scrollLine 2s ease-in-out infinite;
-}
-
-@keyframes scrollLine {
-    0%, 100% { opacity: 0; transform: translateY(0); }
-    50% { opacity: 1; transform: translateY(10px); }
-}
-
 /* ===== PORTFOLIO SECTION ===== */
 .portfolio {
     padding: 6rem 2rem;
@@ -389,9 +361,7 @@ body {
         margin-bottom: 2rem;
         padding: 0 1rem;
     }
-.scroll-indicator {
-        bottom: 1rem;
-    }
+
     .portfolio {
         padding: 3rem 1rem;
     }
@@ -410,10 +380,6 @@ body {
         gap: 1rem;
     }
 
-    .scroll-indicator {
-        bottom: 2rem;
-    }
-}
 
 /* ===== SELECTION ===== */
 ::selection {
