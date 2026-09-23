@@ -124,7 +124,7 @@ body {
 
 .hero-title .letter {
     display: inline-block;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(30px);
     animation: bounceIn 0.6s ease forwards;
 }
