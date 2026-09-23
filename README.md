@@ -18,9 +18,9 @@ thevickora.github.io/
 │   ├── work3.mp4
 │   └── work5.mp4
 └── images/             # Папка для фото
-    ├── work2.jpg
-    ├── work4.jpg
-    └── work6.jpg
+    ├── work2.png
+    ├── work4.png
+    └── work6.png
 ```
 
 ---
