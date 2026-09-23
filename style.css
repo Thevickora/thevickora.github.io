@@ -367,12 +367,12 @@ body {
     }
     
     .hero-content-overlay {
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
         padding: 0 1rem;
     }
 
     .portfolio {
-        padding: 3rem 1rem;
+        padding: 5rem 1rem 3rem 1rem;
     }
 
     .container {
