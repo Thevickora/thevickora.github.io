@@ -798,3 +798,15 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.3);
 }
+.content-block__grid--reverse {
+    flex-direction: row;
+}
+
+.content-block__text p {
+    color: #ffffff;
+}
+
+.content-block__text {
+    text-align: left;
+}
+
