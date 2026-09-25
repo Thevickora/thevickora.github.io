@@ -480,6 +480,10 @@ body {
 /* ===== WORK INFO ===== */
 .work-info {
     padding: 2rem 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .work-title {
@@ -489,7 +493,7 @@ body {
     letter-spacing: 0.03em;
     line-height: 1.6;
     margin-bottom: 0.75rem;
-    color: var(--text-primary);
+    color: #ffffff;
 }
 
 .work-description {
@@ -497,7 +501,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.7;
-    color: var(--text-secondary);
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
@@ -508,21 +512,21 @@ body {
 }
 
 .tag {
-     font-family: 'Advent Pro', sans-serif;
+    font-family: 'Advent Pro', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
     padding: 0.5rem 1rem;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    color: var(--text-secondary);
+    color: #ffffff;
     transition: all 0.3s ease;
 }
 
 .tag:hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
-    color: var(--text-primary);
+    color: #ffffff;
 }
 
 /* ===== FOOTER ===== */
