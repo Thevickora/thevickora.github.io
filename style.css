@@ -720,12 +720,12 @@ body {
     .tools-tape--rtl {
         top: 58%;
     }
-   .tools-tape--ltr .tools-tape__track {
-    animation: tape-ltr 20s linear infinite;
+.tools-tape--ltr .tools-tape__track {
+    animation: tape-ltr 10s linear infinite;
 }
 
 .tools-tape--rtl .tools-tape__track {
-    animation: tape-rtl 20s linear infinite;
+    animation: tape-rtl 10s linear infinite;
 }
 }
 @media (max-width: 480px) {
@@ -761,6 +761,13 @@ body {
     .tools-tape__track {
         gap: 1.5rem;
     }
+   .tools-tape--ltr .tools-tape__track {
+    animation: tape-ltr 12s linear infinite;
+}
+
+.tools-tape--rtl .tools-tape__track {
+    animation: tape-rtl 12s linear infinite;
+}
 }
 
 /* ===== SELECTION ===== */
