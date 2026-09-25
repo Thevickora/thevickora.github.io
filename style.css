@@ -258,7 +258,7 @@ body {
 
 .tools-section__title {
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -320,11 +320,11 @@ body {
 }
 
 .tools-tape--ltr .tools-tape__track {
-    animation: tape-ltr 50s linear infinite;
+    animation: tape-ltr 30s linear infinite;
 }
 
 .tools-tape--rtl .tools-tape__track {
-    animation: tape-rtl 50s linear infinite;
+    animation: tape-rtl 30s linear infinite;
 }
 
 @keyframes tape-ltr {
@@ -703,7 +703,7 @@ body {
     
     .tools-section__title {
         font-size: 1.1rem;
-        top: 2rem;
+        top: 1rem;
     }
     
     .tools-tape__inner {
