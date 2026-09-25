@@ -258,17 +258,18 @@ body {
 
 .tools-section__title {
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(1.3rem, 3vw, 2rem);
-    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
     text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, #ffffff 0%, #666666 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     max-width: 90%;
 }
 
