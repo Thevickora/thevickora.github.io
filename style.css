@@ -65,11 +65,11 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
     color: var(--text-primary);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
     white-space: nowrap;
 }
 
@@ -111,19 +111,22 @@ body {
 }
 
 .hero-subtitle {
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
-    font-weight: 500;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 600;
+    letter-spacing: 0.02em;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     animation: fadeInUp 1s ease 0.2s backwards;
 }
 
 .hero-description {
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
     font-weight: 300;
+    letter-spacing: 0.02em;
     color: var(--text-tertiary);
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     animation: fadeInUp 1s ease 0.4s backwards;
 }
