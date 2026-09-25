@@ -3,7 +3,7 @@
    =================================== */
 
 /* ===== FONTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&family=Advent+Pro:wght@300;400;500;600;700&family=Sofia+Sans+Extra+Condensed:wght@300;400;500;600;700&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&family=Advent+Pro:wght@300;400;500;600;700&family=Sofia+Sans+Extra+Condensed:wght@300;400;500;600;700&family=Pangolin&family=Jura:wght@300;400;500;600;700&display=swap');
 
 /* ===== RESET & BASE ===== */
 * {
@@ -65,11 +65,11 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
-    font-family: 'Pangolin', cursive;
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-family: 'Jura', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
     color:var(--text-primary);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.08em;
     white-space: nowrap;
 }
 
@@ -111,25 +111,26 @@ body {
 }
 
 .hero-subtitle {
-    font-family: 'Pangolin', cursive;
+    font-family: 'Jura', sans-serif;
     font-size: clamp(1.5rem, 4vw, 2.4rem);
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color:var(--text-secondary);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
     animation: fadeInUp 1s ease 0.2s backwards;
 }
 
 .hero-description {
-    font-family: 'Pangolin', cursive;
+    font-family: 'Jura', sans-serif;
     font-size: clamp(1.05rem, 2.2vw, 1.4rem);
     font-weight: 400;
-    letter-spacing: 0.02em;
-    color:var(--text-secondary);
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
     max-width: 700px;
     margin: 0 auto;
     animation: fadeInUp 1s ease 0.4s backwards;
 }
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
