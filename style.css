@@ -3,7 +3,7 @@
    =================================== */
 
 /* ===== FONTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&display=swap');
 
 /* ===== RESET & BASE ===== */
 * {
@@ -182,10 +182,12 @@ body {
 }
 
 .content-block__text h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
 }
 
 .content-block__text p {
@@ -262,15 +264,16 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 600;
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 400;
     text-align: center;
     background: linear-gradient(135deg, #ffffff 0%, #666666 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     max-width: 90%;
+    line-height: 1.6;
 }
 
 .tools-tape {
@@ -526,10 +529,11 @@ body {
 }
 
 .footer-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 600;
-    margin-bottom: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
     background: linear-gradient(135deg, #ffffff 0%, #666666 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
