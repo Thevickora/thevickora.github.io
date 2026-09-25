@@ -246,10 +246,10 @@ body {
 /* ===== TOOLS SECTION (Crime Scene Tapes) ===== */
 
 .tools-section {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: #000000;
     position: relative;
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
