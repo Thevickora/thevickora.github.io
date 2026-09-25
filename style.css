@@ -3,7 +3,7 @@
    =================================== */
 
 /* ===== FONTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&family=Advent+Pro:wght@300;400;500;600;700&display=swap');
 
 /* ===== RESET & BASE ===== */
 * {
@@ -191,9 +191,12 @@ body {
 }
 
 .content-block__text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    opacity: 0.95;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
 }
 
 .content-block__media {
@@ -477,18 +480,21 @@ body {
 }
 
 .work-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 600;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
     margin-bottom: 0.75rem;
     color: var(--text-primary);
 }
 
 .work-description {
+    font-family: 'Advent Pro', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    color: var(--text-secondary);
     line-height: 1.7;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
@@ -499,7 +505,7 @@ body {
 }
 
 .tag {
-    font-family: 'JetBrains Mono', monospace;
+     font-family: 'Advent Pro', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
     padding: 0.5rem 1rem;
