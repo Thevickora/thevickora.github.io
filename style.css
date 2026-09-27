@@ -253,17 +253,20 @@ body {
 /* ===== TOOLS SECTION (Crime Scene Tapes) ===== */
 
 .tools-section {
-    padding: 8rem 0;
+    padding: 4rem 0 8rem;
     background: #000000;
     position: relative;
     min-height: 600px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     overflow: hidden;
 }
 
 .tools-section__title {
+    position: relative;
+    z-index: 10;
     font-family: 'Press Start 2P', cursive;
     font-size: clamp(1.2rem, 3vw, 1.8rem);
     font-weight: 400;
@@ -271,8 +274,8 @@ body {
     color: #ffffff;
     max-width: 90%;
     line-height: 1.6;
+    margin-bottom: 3rem;
 }
-
 .tools-tape {
     position: absolute;
     width: 150%;
@@ -321,11 +324,11 @@ body {
 }
 
 .tools-tape--ltr .tools-tape__track {
-    animation: tape-ltr 30s linear infinite;
+    animation: tape-ltr 10s linear infinite;
 }
 
 .tools-tape--rtl .tools-tape__track {
-    animation: tape-rtl 30s linear infinite;
+    animation: tape-rtl 10s linear infinite;
 }
 
 @keyframes tape-ltr {
@@ -727,11 +730,12 @@ body {
         top: 58%;
     }
 .tools-tape--ltr .tools-tape__track {
-    animation: tape-ltr 10s linear infinite;
+    animation: tape-ltr 5s linear infinite;
 }
 
 .tools-tape--rtl .tools-tape__track {
-    animation: tape-rtl 10s linear infinite;
+    animation: tape-rtl 5
+      s linear infinite;
 }
 }
 @media (max-width: 480px) {
@@ -768,11 +772,11 @@ body {
         gap: 1.5rem;
     }
    .tools-tape--ltr .tools-tape__track {
-    animation: tape-ltr 12s linear infinite;
+    animation: tape-ltr 7s linear infinite;
 }
 
 .tools-tape--rtl .tools-tape__track {
-    animation: tape-rtl 12s linear infinite;
+    animation: tape-rtl 7s linear infinite;
 }
 }
 
