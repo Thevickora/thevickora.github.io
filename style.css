@@ -852,3 +852,22 @@ body {
 .content-block--orange .content-block__text p {
     color: #ffffff;
 }
+.content-block--orange .content-block__video-wrapper {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    overflow: hidden !important;
+    border-radius: 12px !important;
+    position: relative !important;
+    flex: none !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4) !important;
+}
+
+.content-block--orange .content-block__video-wrapper video {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    background: #000 !important;
+}
