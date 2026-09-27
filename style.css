@@ -886,12 +886,14 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-direction: row;
     align-items: stretch;
     gap: 4rem;
 }
 
 .plinks__left {
     flex: 1;
+    max-width: 480px;
 }
 
 .plinks__title {
@@ -975,7 +977,7 @@ body {
 .plinks__right {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
     align-self: stretch;
 }
