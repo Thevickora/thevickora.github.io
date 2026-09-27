@@ -877,15 +877,16 @@ body {
 }
 /* ===== PORTFOLIO LINKS ===== */
 .plinks {
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 0;
     background: var(--bg-secondary);
+    overflow: hidden;
 }
 
 .plinks__inner {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 4rem;
 }
 
@@ -955,14 +956,16 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    align-self: stretch;
 }
 
 .plinks__phone {
     width: 100%;
-    max-width: 420px;
+    max-width: 700px;
     height: auto;
     display: block;
+   margin-top: -40px;
 }
 
 @media (max-width: 1024px) {
