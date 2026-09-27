@@ -878,7 +878,7 @@ body {
 /* ===== PORTFOLIO LINKS ===== */
 .plinks {
     padding: 6rem 2rem 0;
-    background: var(--accent-orange);
+    background: background: linear-gradient(135deg, var(--accent-orange) 0%, #1a0a04 100%);
     overflow: hidden;
 }
 .plinks__inner {
@@ -915,18 +915,18 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 1.2rem 1.5rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 14px;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .plinks__item:hover {
-    background: rgba(255, 255, 255, 0.07);
-    border-color: var(--accent-orange);
+    background: rgba(0, 0, 0, 0.2);
+    border-color: #ffffff;
     transform: translateX(6px);
-    box-shadow: 0 15px 40px rgba(230, 74, 25, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .plinks__icon {
@@ -950,8 +950,9 @@ body {
 }
 
 .plinks__item:hover .plinks__icon {
-    background: var(--accent-orange);
-    border-color: var(--accent-orange);
+    background: #ffffff;
+    border-color: #ffffff;
+    color: var(--accent-orange);
     transform: scale(1.08);
 }
 
@@ -970,7 +971,7 @@ body {
 .plinks__handle {
     font-family: 'Advent Pro', sans-serif;
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.75));
 }
 
 .plinks__right {
