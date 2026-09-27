@@ -878,10 +878,9 @@ body {
 /* ===== PORTFOLIO LINKS ===== */
 .plinks {
     padding: 6rem 2rem 0;
-    background: var(--bg-secondary);
+    background: var(--accent-orange);
     overflow: hidden;
 }
-
 .plinks__inner {
     max-width: 1200px;
     margin: 0 auto;
