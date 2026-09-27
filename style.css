@@ -881,6 +881,7 @@ body {
     background: background: linear-gradient(135deg, var(--accent-orange) 0%, #1a0a04 100%);
     overflow: hidden;
 }
+
 .plinks__inner {
     max-width: 1200px;
     margin: 0 auto;
