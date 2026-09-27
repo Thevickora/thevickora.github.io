@@ -875,3 +875,109 @@ body {
     object-fit: cover !important;
     background: #000 !important;
 }
+/* ===== PORTFOLIO LINKS ===== */
+.plinks {
+    padding: 6rem 2rem;
+    background: var(--bg-secondary);
+}
+
+.plinks__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.plinks__left {
+    flex: 1;
+}
+
+.plinks__title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+}
+
+.plinks__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.plinks__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.plinks__item:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--accent-orange);
+    transform: translateX(6px);
+    box-shadow: 0 15px 40px rgba(230, 74, 25, 0.2);
+}
+
+.plinks__icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.plinks__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.plinks__name {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.plinks__handle {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.plinks__right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plinks__phone {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .plinks__inner {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .plinks {
+        padding: 4rem 1rem;
+    }
+
+    .plinks__phone {
+        max-width: 300px;
+    }
+}
