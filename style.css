@@ -878,7 +878,7 @@ body {
 /* ===== PORTFOLIO LINKS ===== */
 .plinks {
     padding: 6rem 2rem 0;
-    background: background: linear-gradient(135deg, var(--accent-orange) 0%, #1a0a04 100%);
+    background: linear-gradient(135deg, #E64A19 0%, #1a0a04 100%);
     overflow: hidden;
 }
 
@@ -972,7 +972,7 @@ body {
 .plinks__handle {
     font-family: 'Advent Pro', sans-serif;
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.75));
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .plinks__right {
