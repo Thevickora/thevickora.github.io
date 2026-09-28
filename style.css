@@ -988,11 +988,12 @@ body {
 }
 
 .plinks__phone {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
+    width: auto;
+    height: 650px;
+    max-width: none;
     display: block;
-    margin-top: -40px;
+    margin-top: -60px;
+    margin-left: auto;
 }
 
 @media (max-width: 1200px) {
