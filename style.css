@@ -1077,20 +1077,16 @@ body {
 .experience__photo {
     flex: 0 0 40%;
     position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-self: stretch;
 }
 
 .experience__photo img {
     width: 100%;
-    height: auto;
-    max-height: 100%;
-    object-fit: contain;
-    object-position: bottom;
+    height: 100%; 
+    object-fit: cover;
+    object-position: left bottom;
     display: block;
 }
-
 .experience__text-block {
     flex: 1;
     display: flex;
