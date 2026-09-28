@@ -875,6 +875,7 @@ body {
     object-fit: cover !important;
     background: #000 !important;
 }
+
 /* ===== PORTFOLIO LINKS ===== */
 .plinks {
     padding: 6rem 2rem 0;
@@ -902,6 +903,8 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    min-width: 0;
+    overflow: visible;
 }
 
 .plinks__title {
@@ -983,36 +986,41 @@ body {
     color: rgba(255, 255, 255, 0.75);
 }
 
-.plinks__right {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    min-width: 0;
-    overflow: visible;
-}
-
 .plinks__phone {
     width: 100%;
     max-width: 700px;
     height: auto;
     display: block;
-   margin-top: -40px;
+    margin-top: -40px;
 }
 
-@media (max-width: 1024px) {
-    .plinks__inner {
-        flex-direction: column;
-        gap: 3rem;
+@media (max-width: 1200px) {
+    .plinks__left {
+        flex: 0 0 400px;
+    }
+
+    .plinks__phone {
+        max-width: 600px;
     }
 }
 
 @media (max-width: 768px) {
     .plinks {
-        padding: 4rem 1rem;
+        padding: 4rem 1rem 0;
+    }
+
+    .plinks__inner {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .plinks__left {
+        flex: 1;
+        max-width: 100%;
     }
 
     .plinks__phone {
         max-width: 300px;
+        margin-top: 0;
     }
 }
