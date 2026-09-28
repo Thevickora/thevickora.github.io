@@ -1075,17 +1075,21 @@ body {
 }
 
 .experience__photo {
-    flex: 0 0 40%;
+    flex: 0 0 35%; 
     position: relative;
     align-self: stretch;
+    overflow: visible; 
+    margin-left: -3%; 
 }
 
 .experience__photo img {
-    width: 100%;
+    width: auto;
     height: 100%; 
-    object-fit: cover;
-    object-position: left bottom;
+    max-width: none;
+    object-fit: contain;
+    object-position: left bottom; 
     display: block;
+    transform: translateX(-5%);
 }
 .experience__text-block {
     flex: 1;
