@@ -1029,7 +1029,10 @@ body {
     .plinks__inner {
         max-width: 100%;
     }
+   }
+
    /* ===== EXPERIENCE SECTION ===== */
+
 .experience-section {
     padding: 6rem 2rem;
     background: var(--accent-orange);
