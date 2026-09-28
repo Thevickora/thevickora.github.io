@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vickora • AI Creator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="rain-styles.css"> 
 </head>
 <body>
     <!-- HERO SECTION -->
@@ -112,16 +111,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- AI TOOLS RAIN SECTION (Matrix Style) -->
-    <section class="tools-section tools-section--rain">
-        <h2 class="tools-section__title">Инструменты для работы, которые я использую</h2>
-        
-        <div class="rain-container" id="rainContainer">
-            <div class="gradient-overlay-top"></div>
-            <div class="gradient-overlay-bottom"></div>
         </div>
     </section>
     
@@ -319,88 +308,3 @@
     </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
-    
-    <!-- AI TOOLS RAIN SCRIPT -->
-    <script>
-        // AI Tools Data
-        const aiTools = [
-            "Claude", "GPT", "DeepSeek", "Sora Images", "Nano Banana", "SeeDream",
-            "Flux", "Krea", "Higgsfield Soul", "Kling", "Veo", "SeeDance",
-            "Grok", "Beeble", "HeyGen", "Minimax", "Minimax Audio", "Suno",
-            "Eleven Labs", "Canva", "Adobe Photoshop", "Figma Basic", "CapCut", "Leto"
-        ];
-
-        const container = document.getElementById('rainContainer');
-        
-        if (container) {
-            const columnWidth = 150;
-            const numColumns = Math.ceil(window.innerWidth / columnWidth) + 2;
-
-            function createRainColumn(index) {
-                const column = document.createElement('div');
-                column.className = 'rain-column';
-                
-                const toolName = aiTools[Math.floor(Math.random() * aiTools.length)];
-                column.textContent = toolName;
-                
-                const leftPosition = (index * columnWidth) + (Math.random() * 50 - 25);
-                column.style.left = `${leftPosition}px`;
-                
-                const duration = 8 + Math.random() * 8;
-                column.style.animationDuration = `${duration}s`;
-                
-                const delay = Math.random() * 5;
-                column.style.animationDelay = `${delay}s`;
-                
-                container.appendChild(column);
-                
-                setTimeout(() => {
-                    if (column.parentNode) {
-                        column.remove();
-                    }
-                    createRainColumn(index);
-                }, (duration + delay) * 1000);
-            }
-
-            function initRain() {
-                for (let i = 0; i < numColumns; i++) {
-                    setTimeout(() => createRainColumn(i), i * 200);
-                    setTimeout(() => createRainColumn(i), i * 200 + 2000);
-                    setTimeout(() => createRainColumn(i), i * 200 + 4000);
-                }
-            }
-
-            initRain();
-
-            let resizeTimeout;
-            window.addEventListener('resize', () => {
-                clearTimeout(resizeTimeout);
-                resizeTimeout = setTimeout(() => {
-                    const columns = document.querySelectorAll('.rain-column');
-                    columns.forEach(col => col.remove());
-                    
-                    const newNumColumns = Math.ceil(window.innerWidth / columnWidth) + 2;
-                    for (let i = 0; i < newNumColumns; i++) {
-                        setTimeout(() => createRainColumn(i), i * 200);
-                        setTimeout(() => createRainColumn(i), i * 200 + 2000);
-                    }
-                }, 500);
-            });
-
-            setInterval(() => {
-                const columns = document.querySelectorAll('.rain-column');
-                if (columns.length > 0) {
-                    const randomColumn = columns[Math.floor(Math.random() * columns.length)];
-                    randomColumn.style.textShadow = '0 0 20px rgba(255, 102, 0, 1), 0 0 40px rgba(255, 102, 0, 0.8)';
-                    randomColumn.style.color = '#ff6600';
-                    
-                    setTimeout(() => {
-                        randomColumn.style.textShadow = '0 0 10px rgba(255, 255, 255, 0.8)';
-                        randomColumn.style.color = '#fff';
-                    }, 300);
-                }
-            }, 2000);
-        }
-    </script>
-</body>
-</html>
