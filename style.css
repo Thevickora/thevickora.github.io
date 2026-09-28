@@ -1084,8 +1084,8 @@ body {
 
 .experience__photo img {
     width: auto;
-    height: 100%; 
-    max-width: none;
+    height: auto;
+    max-height: 100%;
     object-fit: contain;
     object-position: left bottom; 
     display: block;
