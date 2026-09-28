@@ -976,11 +976,12 @@ body {
 }
 
 .plinks__right {
-    flex: 1;
+    flex: 1 1 auto;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    align-self: stretch;
+    min-width: 0;
+    overflow: visible;
 }
 
 .plinks__phone {
