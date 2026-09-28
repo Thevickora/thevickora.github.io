@@ -757,31 +757,31 @@ body {
 }
 
 .tools-tape__inner {
-    padding: 1rem 0;  /* ← было 1.5rem */
+    padding: 1rem 0; 
 }
 
 .tools-tape__inner::before {
-    height: 50%;  /* ← белая полоса уже */
+    height: 50%;
 }
 
 .tools-tape__item {
-    font-size: 0.8rem;  /* ← текст меньше */
+    font-size: 0.8rem;
 }
 
 .tools-tape__separator {
-    font-size: 0.65rem;  /* ← точки меньше */
+    font-size: 0.65rem;
 }
 
 .tools-tape__track {
-    gap: 1.5rem;  /* ← плотнее */
+    gap: 1.5rem;
 }
 
 .tools-tape--ltr .tools-tape__track {
-    animation: tape-ltr 10s linear infinite;
+    animation: tape-ltr 4s linear infinite;
 }
 
 .tools-tape--rtl .tools-tape__track {
-    animation: tape-rtl 10s linear infinite;
+    animation: tape-rtl 4s linear infinite;
 }
 }
    .content-block--orange .content-block__grid--reverse {
