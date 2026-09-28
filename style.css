@@ -884,18 +884,16 @@ body {
 }
 
 .plinks__inner {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    max-width: none;  
+    margin: 0;
+    padding: 0 2rem 0 10%;  
     display: flex;
-    flex-direction: row;
     align-items: flex-end;
     gap: 4rem;
 }
 
 .plinks__left {
     flex: 0 0 450px;
-    max-width: 450px;
 }
 
 .plinks__right {
@@ -903,6 +901,12 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.plinks__phone {
+    height: 550px; 
+    width: auto;
+    margin-bottom: -30px;
 }
 
 .plinks__title {
@@ -984,13 +988,6 @@ body {
     color: rgba(255, 255, 255, 0.75);
 }
 
-.plinks__phone {
-    width: auto;
-    height: 500px;
-    max-width: none;
-    display: block;
-    margin-bottom: -20px;
-}
 
 @media (max-width: 1200px) {
     .plinks__inner {
