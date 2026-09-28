@@ -732,8 +732,8 @@ body {
 }
     
 .tools-section {
-    min-height: 500px;
-    padding: 2rem 0 4rem;
+    min-height: 400px;
+    padding: 2rem 0 2rem;
 }
 
 .tools-section__title {
