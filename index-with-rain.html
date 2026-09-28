@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vickora • AI Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-video-container">
+            <video autoplay loop muted playsinline class="hero-video hero-video-desktop">
+                <source src="videos/hero-intro.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted playsinline class="hero-video hero-video-mobile">
+                <source src="videos/hero-intro-mobile.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-logo">Vickora - AI Creator</div>
+        <div class="hero-content-overlay">
+            <p class="hero-subtitle">Бренды, реклама, дизайн, видео, корпоративные решения</p>
+            <h1 class="hero-description">Создаю визуальные решения с помощью искусственного интеллекта</h1>
+        </div>
+    </section>
+
+    <!-- CONTENT BLOCKS SECTION -->
+
+    <!-- BLOCK 1: Dark (Mascots & Branding) -->
+    <section class="content-block content-block--dark">
+        <div class="content-block__inner">
+            <div class="content-block__grid">
+                <!-- LEFT: Text -->
+                <div class="content-block__text">
+                    <h2>Создание маскотов и внешки бренда</h2>
+                    <p>Разрабатываю уникальные персонажи и визуальную идентичность для брендов. Каждый маскот — это душа бренда, которая привлекает и вдохновляет аудиторию. Кейс для компании Профи.ру: разработала маскота в цветах бренда, а визуальная отсылка в фигурке логотипа удачно вписана во внешность персонажа.</p>
+                </div>
+                
+                <!-- RIGHT: Media (Video + Photos) -->
+                <div class="content-block__media">
+                    <!-- Vertical Reels Video -->
+                    <div class="content-block__video-wrapper">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/mascot-reels.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <!-- Two Photos -->
+                    <div class="content-block__photos">
+    <img src="images/mascot-1.jpg" alt="Маскот 1">
+    <img src="images/mascot-2.jpg" alt="Маскот 2">
+    <img src="images/mascot-3.jpg" alt="Маскот 3">
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 2: Orange -->
+    <section class="content-block content-block--orange">
+        <div class="content-block__inner">
+            <div class="content-block__grid content-block__grid--reverse">
+                <!-- LEFT: Media (Video + Photos) -->
+                <div class="content-block__media">
+                    <!-- Vertical Reels Video -->
+                    <div class="content-block__video-wrapper">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/ads-reels.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <!-- Two Photos -->
+                    <div class="content-block__photos">
+                        <img src="images/ads-1.jpg" alt="Реклама 1">
+                        <img src="images/ads-2.jpg" alt="Реклама 2">
+                    </div>
+                </div>
+                
+                <!-- RIGHT: Text -->
+                <div class="content-block__text">
+                    <h2>Реклама и фото-видео-контент</h2>
+                    <p>Создаю рекламные ролики и фото-видео-контент для социальных сетей, а также визуал (баннеры, лого, визуалы, тексты и анонсы мероприятий) внутри компаний. Самое важное - не просто сделать классную картинку (это может почти каждый), но и сделать крутые отсылки, где-то с юмором, где-то с цепляющим душу концептом.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 3: Dark -->
+    <section class="content-block content-block--dark">
+        <div class="content-block__inner">
+            <div class="content-block__grid">
+                <!-- LEFT: Text -->
+                <div class="content-block__text">
+                    <h2>Брендинг, дизайн, вайбкодинг</h2>
+                    <p>Помогаю найти свой визуальный голос: от логотипов и баннеров до создания сайтов для анонсов, презентаций и других коммерческих решений. Вайбкочу от души, пробую новое. Этот сайт, кстати, тоже навайбкодила сама за 24 часа.</p>
+                </div>
+                
+                <!-- RIGHT: Media (Video + Photos) -->
+                <div class="content-block__media">
+                    <!-- Vertical Reels Video -->
+                    <div class="content-block__video-wrapper">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/branding-reels.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <!-- Two Photos -->
+                    <div class="content-block__photos">
+                        <img src="images/branding-1.jpg" alt="Брендинг 1">
+                        <img src="images/branding-2.jpg" alt="Брендинг 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI TOOLS RAIN SECTION (Matrix Style) -->
+    <section class="tools-section tools-section--rain">
+        <h2 class="tools-section__title">В чем разбираюсь и что использую для работы</h2>
+        
+        <div class="rain-container" id="rainContainer">
+            <div class="gradient-overlay-top"></div>
+            <div class="gradient-overlay-bottom"></div>
+        </div>
+    </section>
+    
+<!-- EXPERIENCE SECTION -->
+<section class="experience-section">
+    <!-- Desktop video (16:9) -->
+    <video class="experience__video-bg experience__video-bg--desktop" autoplay muted loop playsinline>
+        <source src="images/experience-video.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Mobile video (9:16 vertical) -->
+    <video class="experience__video-bg experience__video-bg--mobile" autoplay muted loop playsinline>
+        <source src="images/experience-vertical.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Dark overlay for text readability -->
+    <div class="experience__overlay"></div>
+    
+    <div class="experience__content">
+        <div class="experience__text-block">
+            <h2 class="experience__title">Опыт работы</h2>
+            <div class="experience__text">
+                <p><strong>2015-2019 г</strong> — бакалавриат РАНХиГС, факультет международного бизнеса. Учила теорию, применяла на практике в режиме реального времени.</p>
+                
+                <p><strong>2019–2023 г</strong> — предпринимательство. Вела международный бизнес. Являлась официальным представителем маникюрного бренда ICE NOVA в РФ. Запускала с нуля, выстраивала всё: от стратегии до контента, от финансов до HR. Была и руководителем, и исполнителем, двигателем и душой команды.</p>
+                
+                <p>Опыт научил главному: системность + креатив = результат.</p>
+                
+                <p><strong>2024 — настоящее время</strong> — полная смена деятельности, ушла в креатив и нейросети. Обучилась владению ИИ-инструментами. Работала с Алиса AI, делала креативы для соц.сетей Unistream, Bork, имела дело с телеграм-ботами (контент). Теперь это — моя база для брендинга, рекламы, дизайна, видео.</p>
+                
+                <p><strong>Вне работы:</strong> вокалистка в музыкальной группе, бас-гитара, коллективные активности. Я коллективный игрок, поэтому хочется делать крутой контент вместе с командой.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+             <h2 class="portfolio__title">Другие проекты</h2>
+            <div class="work-item">
+                <div class="work-media">
+                    <video class="work-video" playsinline>
+                        <source src="videos/project-1.mp4" type="video/mp4">
+                    </video>
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3 class="work-title">Название проекта 1</h3>
+                    <p class="work-description">Описание работы, инструменты (Midjourney, Runway), задача клиента</p>
+                    <div class="work-tags">
+                        <span class="tag">Видео</span>
+                        <span class="tag">Бренд</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-media">
+                    <img class="work-image" src="images/project-2.jpg" alt="Project 2">
+                </div>
+                <div class="work-info">
+                    <h3 class="work-title">Название проекта 2</h3>
+                    <p class="work-description">Описание работы, инструменты, результат</p>
+                    <div class="work-tags">
+                        <span class="tag">Дизайн</span>
+                        <span class="tag">Реклама</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-media">
+                    <video class="work-video" playsinline>
+                        <source src="videos/project-3.mp4" type="video/mp4">
+                    </video>
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3 class="work-title">Название проекта 3</h3>
+                    <p class="work-description">Описание работы, инструменты, задача клиента</p>
+                    <div class="work-tags">
+                        <span class="tag">Видео</span>
+                        <span class="tag">3D</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-media">
+                    <img class="work-image" src="images/project-4.jpg" alt="Project 4">
+                </div>
+                <div class="work-info">
+                    <h3 class="work-title">Название проекта 4</h3>
+                    <p class="work-description">Описание работы, инструменты, результат</p>
+                    <div class="work-tags">
+                        <span class="tag">Иллюстрация</span>
+                        <span class="tag">Бренд</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-media">
+                    <video class="work-video" playsinline>
+                        <source src="videos/project-5.mp4" type="video/mp4">
+                    </video>
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3 class="work-title">Название проекта 5</h3>
+                    <p class="work-description">Описание работы, инструменты, задача клиента</p>
+                    <div class="work-tags">
+                        <span class="tag">Видео</span>
+                        <span class="tag">Реклама</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-media">
+                    <img class="work-image" src="images/project-6.jpg" alt="Project 6">
+                </div>
+                <div class="work-info">
+                    <h3 class="work-title">Название проекта 6</h3>
+                    <p class="work-description">Описание работы, инструменты, результат</p>
+                    <div class="work-tags">
+                        <span class="tag">Дизайн</span>
+                        <span class="tag">Концепт</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ===== PORTFOLIO LINKS ===== -->
+<section class="plinks">
+    <div class="plinks__inner">
+        <h2 class="plinks__title">Портфолио links</h2>
+        <div class="plinks__list">
+            <a href="https://t.me/artintellectoria" target="_blank" rel="noopener" class="plinks__item">
+                <span class="plinks__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 2L11 13"/>
+                        <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </span>
+                <span class="plinks__text">
+                    <span class="plinks__name">Telegram</span>
+                    <span class="plinks__handle">@artintellectoria</span>
+                </span>
+            </a>
+
+            <a href="https://instagram.com/thevickora" target="_blank" rel="noopener" class="plinks__item">
+                <span class="plinks__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                </span>
+                <span class="plinks__text">
+                    <span class="plinks__name">Instagram</span>
+                    <span class="plinks__handle">@thevickora</span>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="footer-title">Обсудим проект?</h2>
+            <div class="contact-links">
+                <a href="https://t.me/victoriakora" class="contact-link">
+    <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="white"/>
+    </svg>
+    Telegram
+</a>
+               <a href="/cdn-cgi/l/email-protection#fe88979d8a918c979f95918c9fc7c9be9b939f9792d09d9193" class="contact-link">
+    <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="white"/>
+    </svg>
+    Email
+</a>
+            </div>
+            <p class="footer-note">Портфолио AI-креатора • Корепанова В.В. • 2026</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+    
+    <!-- AI TOOLS RAIN SCRIPT -->
+    <script>
+        // AI Tools Data
+        const aiTools = [
+            "Claude", "GPT", "DeepSeek", "Sora Images", "Nano Banana", "SeeDream",
+            "Flux", "Krea", "Higgsfield Soul", "Kling", "Veo", "SeeDance",
+            "Grok", "Beeble", "HeyGen", "Minimax", "Minimax Audio", "Suno",
+            "Eleven Labs", "Canva", "Adobe Photoshop", "Figma Basic", "CapCut", "Leto"
+        ];
+
+        const container = document.getElementById('rainContainer');
+        
+        if (container) {
+            const columnWidth = 150;
+            const numColumns = Math.ceil(window.innerWidth / columnWidth) + 2;
+
+            function createRainColumn(index) {
+                const column = document.createElement('div');
+                column.className = 'rain-column';
+                
+                const toolName = aiTools[Math.floor(Math.random() * aiTools.length)];
+                column.textContent = toolName;
+                
+                const leftPosition = (index * columnWidth) + (Math.random() * 50 - 25);
+                column.style.left = `${leftPosition}px`;
+                
+                const duration = 8 + Math.random() * 8;
+                column.style.animationDuration = `${duration}s`;
+                
+                const delay = Math.random() * 5;
+                column.style.animationDelay = `${delay}s`;
+                
+                container.appendChild(column);
+                
+                setTimeout(() => {
+                    if (column.parentNode) {
+                        column.remove();
+                    }
+                    createRainColumn(index);
+                }, (duration + delay) * 1000);
+            }
+
+            function initRain() {
+                for (let i = 0; i < numColumns; i++) {
+                    setTimeout(() => createRainColumn(i), i * 200);
+                    setTimeout(() => createRainColumn(i), i * 200 + 2000);
+                    setTimeout(() => createRainColumn(i), i * 200 + 4000);
+                }
+            }
+
+            initRain();
+
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    const columns = document.querySelectorAll('.rain-column');
+                    columns.forEach(col => col.remove());
+                    
+                    const newNumColumns = Math.ceil(window.innerWidth / columnWidth) + 2;
+                    for (let i = 0; i < newNumColumns; i++) {
+                        setTimeout(() => createRainColumn(i), i * 200);
+                        setTimeout(() => createRainColumn(i), i * 200 + 2000);
+                    }
+                }, 500);
+            });
+
+            setInterval(() => {
+                const columns = document.querySelectorAll('.rain-column');
+                if (columns.length > 0) {
+                    const randomColumn = columns[Math.floor(Math.random() * columns.length)];
+                    randomColumn.style.textShadow = '0 0 20px rgba(255, 102, 0, 1), 0 0 40px rgba(255, 102, 0, 0.8)';
+                    randomColumn.style.color = '#ff6600';
+                    
+                    setTimeout(() => {
+                        randomColumn.style.textShadow = '0 0 10px rgba(255, 255, 255, 0.8)';
+                        randomColumn.style.color = '#fff';
+                    }, 300);
+                }
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
