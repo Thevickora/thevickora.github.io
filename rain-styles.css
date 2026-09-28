@@ -15,12 +15,11 @@
     position: relative;
     z-index: 1000;
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 60px;
-    text-shadow: 0 0 20px rgba(255, 102, 0, 0.8),
-                 0 0 40px rgba(255, 102, 0, 0.5);
+    text-shadow: none;
     letter-spacing: 2px;
 }
 
