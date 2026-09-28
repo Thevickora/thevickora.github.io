@@ -729,22 +729,27 @@ body {
     padding: 1.5rem 0;
 }
 
+.tools-tape {
+    left: -50%;
+    width: 200%;
+}
+
 .tools-tape--ltr {
-    top: 60%;
-    transform: translateY(-50%) rotate(-8deg);
+    top: 58%;
+    transform: translateY(-50%) rotate(-15deg);
 }
 
 .tools-tape--rtl {
-    top: 72%;
-    transform: translateY(-50%) rotate(8deg);
+    top: 68%;
+    transform: translateY(-50%) rotate(15deg);
 }
+
 .tools-tape--ltr .tools-tape__track {
-    animation: tape-ltr 5s linear infinite;
+    animation: tape-ltr 3s linear infinite;
 }
 
 .tools-tape--rtl .tools-tape__track {
-    animation: tape-rtl 5
-      s linear infinite;
+    animation: tape-rtl 3s linear infinite;
 }
    .content-block--orange .content-block__grid--reverse {
     flex-direction: column;
