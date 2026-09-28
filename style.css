@@ -1057,7 +1057,7 @@ body {
     }
    }
 
-   /* ===== EXPERIENCE SECTION ===== */
+ /* ===== EXPERIENCE SECTION ===== */
 
 .experience-section {
     position: relative;
@@ -1066,7 +1066,7 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: flex-end;  /* ← ВЫРАВНИВАНИЕ СПРАВА */
+    justify-content: flex-end;
 }
 
 .experience__video-bg {
@@ -1079,6 +1079,28 @@ body {
     z-index: 0;
 }
 
+/* Desktop video visible by default */
+.experience__video-bg--desktop {
+    display: block;
+}
+
+/* Mobile video hidden by default */
+.experience__video-bg--mobile {
+    display: none;
+}
+
+/* Overlay for mobile (hidden on desktop) */
+.experience__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: none;
+}
+
 .experience__content {
     position: relative;
     z-index: 2;
@@ -1087,11 +1109,11 @@ body {
     margin: 0 auto;
     padding: 3rem 2rem;
     display: flex;
-    justify-content: flex-end;  /* ← ТЕКСТ СПРАВА */
+    justify-content: flex-end;
 }
 
 .experience__text-block {
-    max-width: 550px;  /* ← ШИРИНА ТЕКСТОВОГО БЛОКА */
+    max-width: 550px;
     text-align: left;
 }
 
@@ -1126,9 +1148,25 @@ body {
         justify-content: center;
     }
 
+    /* Hide desktop video */
+    .experience__video-bg--desktop {
+        display: none;
+    }
+
+    /* Show mobile video */
+    .experience__video-bg--mobile {
+        display: block;
+    }
+
+    /* Show overlay */
+    .experience__overlay {
+        display: block;
+    }
+
     .experience__content {
         padding: 2rem 1rem;
         justify-content: center;
+        z-index: 2;
     }
 
     .experience__text-block {
@@ -1139,10 +1177,12 @@ body {
         font-size: 1.3rem;
         margin-bottom: 2rem;
         text-align: center;
+        color: #ffffff;
     }
 
     .experience__text p {
         font-size: 1rem;
+        color: #ffffff;
     }
 }
 
