@@ -715,26 +715,29 @@ body {
 }
     
 .tools-section {
-    min-height: 450px;
-    padding: 6rem 0;
+    min-height: 500px;
+    padding: 3rem 0 5rem;
 }
 
 .tools-section__title {
     font-size: 1.1rem;
-    top: 1.5rem;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
 }
     
-    .tools-tape__inner {
-        padding: 1.5rem 0;
-    }
-    
-    .tools-tape--ltr {
-        top: 42%;
-    }
-    
-    .tools-tape--rtl {
-        top: 58%;
-    }
+.tools-tape__inner {
+    padding: 1.5rem 0;
+}
+
+.tools-tape--ltr {
+    top: 60%;
+    transform: translateY(-50%) rotate(-8deg);
+}
+
+.tools-tape--rtl {
+    top: 72%;
+    transform: translateY(-50%) rotate(8deg);
+}
 .tools-tape--ltr .tools-tape__track {
     animation: tape-ltr 5s linear infinite;
 }
