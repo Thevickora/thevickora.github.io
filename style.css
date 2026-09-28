@@ -697,16 +697,22 @@ body {
         aspect-ratio: 9 / 16;
     }
     
-    .content-block__photos {
-        width: 100%;
-        flex-direction: row;
-        gap: 0.8rem;
-    }
-    
-    .content-block__photos img {
-        flex: 1;
-        aspect-ratio: 1;
-    }
+.content-block__photos {
+    width: 100%;
+    flex-direction: row;
+    gap: 0.8rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.content-block__photos img {
+    width: 40%;
+    min-width: 40%;
+    flex: none;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
     
 .tools-section {
     min-height: 450px;
