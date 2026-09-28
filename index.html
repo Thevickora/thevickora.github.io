@@ -235,9 +235,19 @@
     
 <!-- EXPERIENCE SECTION -->
 <section class="experience-section">
-    <video class="experience__video-bg" autoplay muted loop playsinline>
+    <!-- Desktop video (16:9) -->
+    <video class="experience__video-bg experience__video-bg--desktop" autoplay muted loop playsinline>
         <source src="images/experience-video.mp4" type="video/mp4">
     </video>
+    
+    <!-- Mobile video (9:16 vertical) -->
+    <video class="experience__video-bg experience__video-bg--mobile" autoplay muted loop playsinline>
+        <source src="images/experience-vertical.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Dark overlay for text readability -->
+    <div class="experience__overlay"></div>
+    
     <div class="experience__content">
         <div class="experience__text-block">
             <h2 class="experience__title">Опыт работы</h2>
