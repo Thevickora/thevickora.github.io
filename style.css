@@ -759,8 +759,8 @@ body {
 
 .tools-tape__inner {
     padding: 1rem 0; 
-   background: #A0522D;
-    box-shadow: 0 8px 30px rgba(160, 82, 45, 0.4); 
+   background: #FF5B14;
+    box-shadow: 0 8px 30px rgba(255, 91, 20, 0.5);
 }
 
 .tools-tape__inner::before {
