@@ -777,11 +777,11 @@ body {
 }
 
 .tools-tape--ltr .tools-tape__track {
-    animation: tape-ltr 4s linear infinite;
+    animation: tape-ltr 7s linear infinite;
 }
 
 .tools-tape--rtl .tools-tape__track {
-    animation: tape-rtl 4s linear infinite;
+    animation: tape-rtl 7s linear infinite;
 }
 }
    .content-block--orange .content-block__grid--reverse {
