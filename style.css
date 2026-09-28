@@ -725,10 +725,6 @@ body {
     padding: 0 1rem;
 }
     
-.tools-tape__inner {
-    padding: 1.5rem 0;
-}
-
 .tools-tape {
     left: -40%;
     width: 200%;
@@ -744,12 +740,33 @@ body {
     transform: translateY(-50%) rotate(15deg);
 }
 
+.tools-tape__inner {
+    padding: 1rem 0;  /* ← было 1.5rem */
+}
+
+.tools-tape__inner::before {
+    height: 50%;  /* ← белая полоса уже */
+}
+
+.tools-tape__item {
+    font-size: 0.8rem;  /* ← текст меньше */
+}
+
+.tools-tape__separator {
+    font-size: 0.65rem;  /* ← точки меньше */
+}
+
+.tools-tape__track {
+    gap: 1.5rem;  /* ← плотнее */
+}
+
 .tools-tape--ltr .tools-tape__track {
     animation: tape-ltr 3s linear infinite;
 }
 
 .tools-tape--rtl .tools-tape__track {
     animation: tape-rtl 3s linear infinite;
+}
 }
    .content-block--orange .content-block__grid--reverse {
     flex-direction: column;
