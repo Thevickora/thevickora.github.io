@@ -22,6 +22,7 @@
     --accent: #0071e3;
     --accent-hover: #0077ed;
     --accent-orange: #E64A19;
+   --tape-orange: #FF5B14;
     --bg-dark-transparent: rgba(26, 26, 26, 0.85);
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -295,9 +296,9 @@ body {
 }
 
 .tools-tape__inner {
-    background: var(--accent-orange);
+    background: var(--tape-orange);
     padding: 2.5rem 0;
-    box-shadow: 0 8px 30px rgba(230, 74, 25, 0.5);
+    box-shadow: 0 8px 30px rgba(255, 91, 20, 0.5);
     position: relative;
 }
 
