@@ -67,8 +67,8 @@ body {
     z-index: 3;
     font-family: 'Tektur', sans-serif;
     font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--text-primary);
+    font-weight: 400;
+    color: var(--text-secondary);
     letter-spacing: 0.08em;
     white-space: nowrap;
 }
