@@ -285,12 +285,12 @@ body {
 }
 
 .tools-tape--ltr {
-    top: 70%;
+    top: 60%;
     transform: translateY(-50%) rotate(-12deg);
 }
 
 .tools-tape--rtl {
-    top: 70%;
+    top: 60%;
     transform: translateY(-50%) rotate(12deg);
 }
 
