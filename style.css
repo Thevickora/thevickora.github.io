@@ -883,17 +883,25 @@ body {
 }
 
 .plinks__inner {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
+    padding: 0 0 0 2rem;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    gap: 4rem;
+    align-items: flex-end;
+    gap: 3rem;
 }
 
 .plinks__left {
-    flex: 1;
+    flex: 0 0 480px;
     max-width: 480px;
+}
+
+.plinks__right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .plinks__title {
