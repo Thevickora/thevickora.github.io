@@ -885,7 +885,7 @@ body {
 @media (min-width: 769px) {
     .content-block--orange .content-block__grid--reverse {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
         gap: 4rem;
         max-width: 1200px;
