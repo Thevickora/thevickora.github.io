@@ -290,7 +290,7 @@ body {
 }
 
 .tools-tape--rtl {
-    top: 60%;
+    top: 52%;
     transform: translateY(-50%) rotate(12deg);
 }
 
