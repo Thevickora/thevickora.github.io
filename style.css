@@ -733,7 +733,7 @@ body {
     
 .tools-section {
     min-height: 500px;
-    padding: 3rem 0 5rem;
+    padding: 2rem 0 4rem;
 }
 
 .tools-section__title {
@@ -759,6 +759,8 @@ body {
 
 .tools-tape__inner {
     padding: 1rem 0; 
+   background: #8B4513;
+    box-shadow: 0 8px 30px rgba(139, 69, 19, 0.4);
 }
 
 .tools-tape__inner::before {
