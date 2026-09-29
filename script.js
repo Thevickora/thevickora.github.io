@@ -230,3 +230,37 @@ lightboxOverlay.addEventListener('click', closeLightbox);
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
 });
+// ===== NAVIGATION =====
+const nav = document.getElementById('nav');
+const navBurger = document.getElementById('navBurger');
+const navLinks = document.querySelector('.nav__links');
+
+// Появление фона при скролле
+window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Бургер-меню
+navBurger.addEventListener('click', () => {
+    navBurger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+});
+
+// Закрываем меню при клике на ссылку
+navLinks.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+        navBurger.classList.remove('open');
+        navLinks.classList.remove('open');
+    });
+});
+
+// Плавный скролл
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
