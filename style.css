@@ -1586,3 +1586,9 @@ body {
         font-size: 0.85rem;
     }
 }
+@media (max-width: 768px) {
+    .content-block--dark .content-block__photos {
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
