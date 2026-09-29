@@ -1591,4 +1591,8 @@ body {
         justify-content: center;
         margin: 0 auto;
     }
+
+ .content-block--dark .content-block__photos img {
+        aspect-ratio: 5 / 4;
+    }
 }
