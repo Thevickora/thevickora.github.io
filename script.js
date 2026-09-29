@@ -199,6 +199,10 @@ document.querySelectorAll('.videos-gallery .gallery-item').forEach(item => {
     item.style.cursor = 'zoom-in';
     item.addEventListener('click', () => {
         const video = item.querySelector('video');
+
+        // Останавливаем превью
+        video.pause();
+
         const src = video.querySelector('source').src;
         while (lightboxVideo.firstChild) lightboxVideo.removeChild(lightboxVideo.firstChild);
         const source = document.createElement('source');
@@ -214,7 +218,6 @@ document.querySelectorAll('.videos-gallery .gallery-item').forEach(item => {
     });
 });
 
-// Закрываем
 function closeLightbox() {
     lightbox.classList.remove('active');
     lightboxVideo.pause();
@@ -222,7 +225,6 @@ function closeLightbox() {
     lightboxImg.style.display = 'block';
     document.body.style.overflow = '';
 }
-
 lightboxClose.addEventListener('click', closeLightbox);
 lightboxOverlay.addEventListener('click', closeLightbox);
 document.addEventListener('keydown', e => {
