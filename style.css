@@ -1451,7 +1451,7 @@ body {
     }
     
     .gallery-item {
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 5 / 4;
     }
 }
 
