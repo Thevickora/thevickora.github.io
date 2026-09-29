@@ -197,3 +197,44 @@ lightboxOverlay.addEventListener('click', closeLightbox);
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
 });
+// ===== LIGHTBOX — ВИДЕО =====
+const lightboxVideo = document.createElement('video');
+lightboxVideo.setAttribute('controls', '');
+lightboxVideo.setAttribute('playsinline', '');
+lightboxVideo.style.cssText = 'max-width:90vw;max-height:90vh;border-radius:8px;display:none;';
+document.querySelector('.lightbox__content').appendChild(lightboxVideo);
+
+document.querySelectorAll('.videos-gallery .gallery-item video').forEach(video => {
+    video.closest('.gallery-item').style.cursor = 'zoom-in';
+    video.closest('.gallery-item').addEventListener('click', () => {
+        const src = video.querySelector('source').src;
+        lightboxVideo.querySelector('source')?.remove();
+        const source = document.createElement('source');
+        source.src = src;
+        source.type = 'video/mp4';
+        lightboxVideo.appendChild(source);
+        lightboxVideo.load();
+        lightboxVideo.style.display = 'block';
+        lightboxImg.style.display = 'none';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        lightboxVideo.play();
+    });
+});
+
+// Обновляем функцию закрытия — останавливаем видео
+const originalClose = closeLightbox;
+closeLightbox = function() {
+    lightboxVideo.pause();
+    lightboxVideo.style.display = 'none';
+    lightboxImg.style.display = 'block';
+    originalClose();
+};
+
+lightboxClose.removeEventListener('click', originalClose);
+lightboxOverlay.removeEventListener('click', originalClose);
+lightboxClose.addEventListener('click', closeLightbox);
+lightboxOverlay.addEventListener('click', closeLightbox);
+
+document.removeEventListener('keydown', e => { if (e.key === 'Escape') originalClose(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
