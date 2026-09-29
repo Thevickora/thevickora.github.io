@@ -1813,10 +1813,10 @@ body {
 
 /* Mobile menu */
 @media (max-width: 768px) {
-    .nav__burger {
-        display: flex;
+    .nav__inner {
+        justify-content: flex-end;
     }
-
+}
     .nav__links {
         display: none;
         position: absolute;
