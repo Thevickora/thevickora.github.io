@@ -1513,11 +1513,20 @@ body {
 
 @keyframes scroll-left {
     0% {
-        transform: translateX(0);
+        transform: translateX(0) !important;
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-100%) !important;
     }
+}
+
+.tools__track {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    white-space: nowrap;
+    padding: 1.5rem 0;
+    animation: scroll-left 15s linear infinite !important;
 }
 
 @media (max-width: 768px) {
