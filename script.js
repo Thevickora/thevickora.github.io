@@ -123,3 +123,47 @@ window.addEventListener('load', () => {
         firstVideo.preload = 'metadata';
     }
 });
+// Фильтры проектов
+const filterBtns = document.querySelectorAll('.filter-btn');
+const galleries = document.querySelectorAll('.projects-gallery');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Убрать active у всех кнопок
+        filterBtns.forEach(b => b.classList.remove('active'));
+        
+        // Добавить active к нажатой
+        btn.classList.add('active');
+        
+        // Получить фильтр
+        const filter = btn.getAttribute('data-filter');
+        
+        // Показать нужную галерею
+        galleries.forEach(gallery => {
+            gallery.classList.remove('active');
+            if (gallery.classList.contains(`${filter}-gallery`)) {
+                gallery.classList.add('active');
+            }
+        });
+    });
+});
+
+// Видео в галерее
+const videoItems = document.querySelectorAll('.video-item');
+
+videoItems.forEach(item => {
+    const video = item.querySelector('video');
+    const overlay = item.querySelector('.video-play-overlay');
+    
+    item.addEventListener('click', () => {
+        if (video.paused) {
+            video.play();
+            overlay.style.opacity = '0';
+            overlay.style.pointerEvents = 'none';
+        } else {
+            video.pause();
+            overlay.style.opacity = '1';
+            overlay.style.pointerEvents = 'all';
+        }
+    });
+});
