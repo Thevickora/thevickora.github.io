@@ -1539,17 +1539,22 @@ body {
         padding: 0 1rem;
     }
 
+    .tools__column {
+        text-align: center;
+    }
+
     .tools__column-title {
         font-size: 1rem;
         margin-bottom: 1rem;
     }
 
-    .tools__list-item {
-        font-size: 0.9rem;
-    }
-
     .tools__list {
         gap: 0.6rem;
+        align-items: center;
+    }
+
+    .tools__list-item {
+        font-size: 0.9rem;
     }
 }
 
@@ -1564,15 +1569,20 @@ body {
         padding: 0 0.8rem;
     }
 
+    .tools__column {
+        text-align: center;
+    }
+
     .tools__column-title {
         font-size: 0.95rem;
     }
 
-    .tools__list-item {
-        font-size: 0.85rem;
-    }
-
     .tools__list {
         gap: 0.5rem;
+        align-items: center;
+    }
+
+    .tools__list-item {
+        font-size: 0.85rem;
     }
 }
