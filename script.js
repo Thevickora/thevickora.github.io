@@ -167,3 +167,33 @@ videoItems.forEach(item => {
         }
     });
 });
+// ===== LIGHTBOX =====
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxOverlay = document.getElementById('lightboxOverlay');
+
+// Открываем при клике на фото в галерее
+document.querySelectorAll('.photos-gallery .gallery-item img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+// Закрываем
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightboxOverlay.addEventListener('click', closeLightbox);
+
+// Закрываем по Escape
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+});
