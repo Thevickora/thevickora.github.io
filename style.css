@@ -1069,11 +1069,40 @@ body {
 /* Mobile */
 @media (max-width: 768px) {
     .plinks {
-        padding: 4rem 1rem;
+        padding: 3rem 1.5rem;
     }
 
     .plinks__inner {
         max-width: 100%;
+        margin: 0;
+    }
+    
+    .plinks__title {
+        font-size: 1.1rem;
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+    
+    .plinks__item {
+        padding: 1rem 1.2rem;
+    }
+    
+    .plinks__icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .plinks__icon svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .plinks__name {
+        font-size: 0.95rem;
+    }
+    
+    .plinks__handle {
+        font-size: 0.85rem;
     }
 }
  /* ===== EXPERIENCE SECTION ===== */
