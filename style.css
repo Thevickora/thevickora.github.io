@@ -1462,13 +1462,8 @@ body {
 }
 /* ===== TOOLS SECTION ===== */
 .tools {
-    padding: 6rem 2rem;
-    background: var(--bg-secondary);
-}
-
-.tools__inner {
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 4rem 0;
+    background-color: var(--bg-dark-transparent);
 }
 
 .tools__title {
@@ -1477,31 +1472,45 @@ body {
     font-weight: 400;
     color: #fff;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     letter-spacing: 0.05em;
     line-height: 1.6;
+    padding: 0 2rem;
 }
 
 /* Строки */
 .tools__row {
     overflow: hidden;
     margin-bottom: 2rem;
+    width: 100%;
+}
+
+.tools__row:last-child {
+    margin-bottom: 0;
 }
 
 .tools__row--left {
-    animation: scroll-left 30s linear infinite;
+    direction: ltr;
 }
 
 .tools__row--right {
-    animation: scroll-right 30s linear infinite;
+    direction: rtl;
 }
 
-.tools__list {
+.tools__track {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     white-space: nowrap;
-    min-width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.tools__row--left .tools__track {
+    animation: scroll-left 40s linear infinite;
+}
+
+.tools__row--right .tools__track {
+    animation: scroll-right 40s linear infinite;
 }
 
 .tools__item {
@@ -1509,11 +1518,6 @@ body {
     font-size: 1.1rem;
     font-weight: 400;
     color: #ffffff;
-    transition: color 0.3s ease;
-}
-
-.tools__item:hover {
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .tools__dot {
@@ -1528,13 +1532,13 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(calc(-50% - 1.5rem));
     }
 }
 
 @keyframes scroll-right {
     0% {
-        transform: translateX(-50%);
+        transform: translateX(calc(-50% - 1.5rem));
     }
     100% {
         transform: translateX(0);
@@ -1544,15 +1548,16 @@ body {
 /* Мобильная версия */
 @media (max-width: 768px) {
     .tools {
-        padding: 4rem 1rem;
+        padding: 3rem 0;
     }
 
     .tools__title {
         font-size: 1.5rem;
         margin-bottom: 2rem;
+        padding: 0 1rem;
     }
 
-    .tools__list {
+    .tools__track {
         gap: 1rem;
     }
 
@@ -1560,25 +1565,11 @@ body {
         font-size: 0.95rem;
     }
 
-    .tools__row--left {
-        animation: scroll-left 20s linear infinite;
+    .tools__row--left .tools__track {
+        animation: scroll-left 25s linear infinite;
     }
 
-    .tools__row--right {
-        animation: scroll-right 20s linear infinite;
-    }
-}
-
-@media (max-width: 480px) {
-    .tools__title {
-        font-size: 1.1rem;
-    }
-
-    .tools__list {
-        gap: 0.8rem;
-    }
-
-    .tools__item {
-        font-size: 0.85rem;
+    .tools__row--right .tools__track {
+        animation: scroll-right 25s linear infinite;
     }
 }
