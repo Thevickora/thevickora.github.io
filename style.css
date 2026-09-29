@@ -1478,57 +1478,51 @@ body {
     padding: 0 2rem;
 }
 
-.tools__row {
-    overflow: hidden;
-    margin-bottom: 0;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+.tools__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-.tools__track {
+.tools__column {
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    white-space: nowrap;
-    padding: 1.5rem 0;
-    animation: scroll-left 15s linear infinite;
+    flex-direction: column;
 }
 
-.tools__item {
+.tools__column-title {
     font-family: 'Advent Pro', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.tools__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.tools__list-item {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
 }
 
-.tools__dot {
-    font-size: 1.2rem;
-    color: #ffffff;
-    opacity: 0.5;
+.tools__list-item:hover {
+    opacity: 1;
 }
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0) !important;
-    }
-    100% {
-        transform: translateX(-100%) !important;
-    }
-}
-
-.tools__track {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    white-space: nowrap;
-    padding: 1.5rem 0;
-    animation: scroll-left 15s linear infinite !important;
-}
-
 @media (max-width: 768px) {
     .tools {
         padding: 4rem 0;
@@ -1537,21 +1531,25 @@ body {
     .tools__title {
         font-size: 1.5rem;
         margin-bottom: 2rem;
+    }
+
+    .tools__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
         padding: 0 1rem;
     }
 
-    .tools__track {
-        gap: 1.2rem;
-        padding: 1rem 0;
-        animation: scroll-left 7s linear infinite;
-    }
-
-    .tools__item {
-        font-size: 1rem;
-    }
-
-    .tools__dot {
+    .tools__column-title {
         font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .tools__list-item {
+        font-size: 0.8rem;
+    }
+
+    .tools__list {
+        gap: 0.5rem;
     }
 }
 
@@ -1560,12 +1558,21 @@ body {
         font-size: 1.1rem;
     }
 
-    .tools__track {
-        gap: 0.8rem;
-        animation: scroll-left 5s linear infinite;
+    .tools__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 0 0.8rem;
     }
 
-    .tools__item {
-        font-size: 0.9rem;
+    .tools__column-title {
+        font-size: 0.8rem;
+    }
+
+    .tools__list-item {
+        font-size: 0.75rem;
+    }
+
+    .tools__list {
+        gap: 0.4rem;
     }
 }
