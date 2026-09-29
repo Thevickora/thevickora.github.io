@@ -1495,7 +1495,7 @@ body {
     gap: 2rem;
     white-space: nowrap;
     padding: 1.5rem 0;
-    animation: scroll-left 25s linear infinite;
+    animation: scroll-left 15s linear infinite;
 }
 
 .tools__item {
@@ -1534,7 +1534,7 @@ body {
     .tools__track {
         gap: 1.2rem;
         padding: 1rem 0;
-        animation: scroll-left 15s linear infinite;
+        animation: scroll-left 7s linear infinite;
     }
 
     .tools__item {
@@ -1553,7 +1553,7 @@ body {
 
     .tools__track {
         gap: 0.8rem;
-        animation: scroll-left 12s linear infinite;
+        animation: scroll-left 5s linear infinite;
     }
 
     .tools__item {
