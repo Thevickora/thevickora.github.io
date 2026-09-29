@@ -1460,3 +1460,125 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* ===== TOOLS SECTION ===== */
+.tools {
+    padding: 6rem 2rem;
+    background: var(--bg-secondary);
+}
+
+.tools__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tools__title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+}
+
+/* Строки */
+.tools__row {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.tools__row--left {
+    animation: scroll-left 30s linear infinite;
+}
+
+.tools__row--right {
+    animation: scroll-right 30s linear infinite;
+}
+
+.tools__list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    white-space: nowrap;
+    min-width: max-content;
+}
+
+.tools__item {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.tools__item:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tools__dot {
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+/* Анимации */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .tools {
+        padding: 4rem 1rem;
+    }
+
+    .tools__title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .tools__list {
+        gap: 1rem;
+    }
+
+    .tools__item {
+        font-size: 0.95rem;
+    }
+
+    .tools__row--left {
+        animation: scroll-left 20s linear infinite;
+    }
+
+    .tools__row--right {
+        animation: scroll-right 20s linear infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .tools__title {
+        font-size: 1.1rem;
+    }
+
+    .tools__list {
+        gap: 0.8rem;
+    }
+
+    .tools__item {
+        font-size: 0.85rem;
+    }
+}
