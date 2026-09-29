@@ -1739,7 +1739,8 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* было space-between */
+    gap: 2rem;
 }
 
 .nav__logo {
