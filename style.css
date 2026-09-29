@@ -1482,19 +1482,16 @@ body {
 .tools__row {
     overflow: hidden;
     margin-bottom: 2rem;
-    width: 100%;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .tools__row:last-child {
     margin-bottom: 0;
-}
-
-.tools__row--left {
-    direction: ltr;
-}
-
-.tools__row--right {
-    direction: rtl;
 }
 
 .tools__track {
@@ -1502,15 +1499,15 @@ body {
     align-items: center;
     gap: 1.5rem;
     white-space: nowrap;
-    animation: scroll 40s linear infinite;
+    padding: 1rem 0;
 }
 
 .tools__row--left .tools__track {
-    animation: scroll-left 40s linear infinite;
+    animation: scroll-left 60s linear infinite;
 }
 
 .tools__row--right .tools__track {
-    animation: scroll-right 40s linear infinite;
+    animation: scroll-right 60s linear infinite;
 }
 
 .tools__item {
@@ -1532,13 +1529,13 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-50% - 1.5rem));
+        transform: translateX(-100%);
     }
 }
 
 @keyframes scroll-right {
     0% {
-        transform: translateX(calc(-50% - 1.5rem));
+        transform: translateX(-100%);
     }
     100% {
         transform: translateX(0);
@@ -1559,17 +1556,18 @@ body {
 
     .tools__track {
         gap: 1rem;
+        padding: 0.8rem 0;
     }
 
     .tools__item {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .tools__row--left .tools__track {
-        animation: scroll-left 25s linear infinite;
+        animation: scroll-left 40s linear infinite;
     }
 
     .tools__row--right .tools__track {
-        animation: scroll-right 25s linear infinite;
+        animation: scroll-right 40s linear infinite;
     }
 }
