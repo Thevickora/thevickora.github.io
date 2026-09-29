@@ -1462,7 +1462,7 @@ body {
 }
 /* ===== TOOLS SECTION ===== */
 .tools {
-    padding: 4rem 0;
+    padding: 6rem 0;
     background-color: var(--bg-dark-transparent);
 }
 
@@ -1472,16 +1472,15 @@ body {
     font-weight: 400;
     color: #fff;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     letter-spacing: 0.05em;
     line-height: 1.6;
     padding: 0 2rem;
 }
 
-/* Строки */
 .tools__row {
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     width: 100vw;
     position: relative;
     left: 50%;
@@ -1490,40 +1489,28 @@ body {
     margin-right: -50vw;
 }
 
-.tools__row:last-child {
-    margin-bottom: 0;
-}
-
 .tools__track {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     white-space: nowrap;
-    padding: 1rem 0;
-}
-
-.tools__row--left .tools__track {
-    animation: scroll-left 30s linear infinite;
-}
-
-.tools__row--right .tools__track {
-    animation: scroll-right 30s linear infinite;
+    padding: 1.5rem 0;
+    animation: scroll-left 25s linear infinite;
 }
 
 .tools__item {
     font-family: 'Advent Pro', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: #ffffff;
 }
 
 .tools__dot {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #ffffff;
     opacity: 0.5;
 }
 
-/* Анимации */
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -1533,19 +1520,9 @@ body {
     }
 }
 
-@keyframes scroll-right {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-/* Мобильная версия */
 @media (max-width: 768px) {
     .tools {
-        padding: 3rem 0;
+        padding: 4rem 0;
     }
 
     .tools__title {
@@ -1555,19 +1532,31 @@ body {
     }
 
     .tools__track {
-        gap: 1rem;
-        padding: 0.8rem 0;
+        gap: 1.2rem;
+        padding: 1rem 0;
+        animation: scroll-left 15s linear infinite;
+    }
+
+    .tools__item {
+        font-size: 1rem;
+    }
+
+    .tools__dot {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tools__title {
+        font-size: 1.1rem;
+    }
+
+    .tools__track {
+        gap: 0.8rem;
+        animation: scroll-left 12s linear infinite;
     }
 
     .tools__item {
         font-size: 0.9rem;
-    }
-
-    .tools__row--left .tools__track {
-        animation: scroll-left 20s linear infinite;
-    }
-
-    .tools__row--right .tools__track {
-        animation: scroll-right 20s linear infinite;
     }
 }
