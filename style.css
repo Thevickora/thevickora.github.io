@@ -1596,3 +1596,39 @@ body {
         aspect-ratio: 5 / 4;
     }
 }
+/* ===== GALLERY DESCRIPTIONS ===== */
+.gallery-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.gallery-description {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item-wrapper:hover .gallery-description {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .gallery-item-wrapper {
+        gap: 0.6rem;
+    }
+
+    .gallery-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-description {
+        font-size: 0.85rem;
+    }
+}
