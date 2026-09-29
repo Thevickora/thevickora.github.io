@@ -1850,3 +1850,12 @@ body {
         padding: 0.9rem 2rem;
     }
 }
+.hero-logo--mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hero-logo--mobile-only {
+        display: block;
+    }
+}
