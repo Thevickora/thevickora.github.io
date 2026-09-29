@@ -1816,7 +1816,11 @@ body {
     .nav__inner {
         justify-content: flex-end;
     }
-}
+
+    .nav__burger {
+        display: flex;
+    }
+
     .nav__links {
         display: none;
         position: absolute;
