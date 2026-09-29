@@ -173,42 +173,34 @@ const lightboxImg = document.getElementById('lightboxImg');
 const lightboxClose = document.getElementById('lightboxClose');
 const lightboxOverlay = document.getElementById('lightboxOverlay');
 
-// Открываем при клике на фото в галерее
+// Добавляем video-элемент в lightbox
+const lightboxVideo = document.createElement('video');
+lightboxVideo.setAttribute('controls', '');
+lightboxVideo.setAttribute('playsinline', '');
+lightboxVideo.style.cssText = 'max-width:90vw;max-height:90vh;border-radius:8px;display:none;box-shadow:0 20px 60px rgba(0,0,0,0.6);';
+document.querySelector('.lightbox__content').appendChild(lightboxVideo);
+
+// Открываем фото
 document.querySelectorAll('.photos-gallery .gallery-item img').forEach(img => {
     img.style.cursor = 'zoom-in';
     img.addEventListener('click', () => {
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt;
+        lightboxImg.style.display = 'block';
+        lightboxVideo.style.display = 'none';
+        lightboxVideo.pause();
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
     });
 });
 
-// Закрываем
-function closeLightbox() {
-    lightbox.classList.remove('active');
-    document.body.style.overflow = '';
-}
-
-lightboxClose.addEventListener('click', closeLightbox);
-lightboxOverlay.addEventListener('click', closeLightbox);
-
-// Закрываем по Escape
-document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeLightbox();
-});
-// ===== LIGHTBOX — ВИДЕО =====
-const lightboxVideo = document.createElement('video');
-lightboxVideo.setAttribute('controls', '');
-lightboxVideo.setAttribute('playsinline', '');
-lightboxVideo.style.cssText = 'max-width:90vw;max-height:90vh;border-radius:8px;display:none;';
-document.querySelector('.lightbox__content').appendChild(lightboxVideo);
-
-document.querySelectorAll('.videos-gallery .gallery-item video').forEach(video => {
-    video.closest('.gallery-item').style.cursor = 'zoom-in';
-    video.closest('.gallery-item').addEventListener('click', () => {
+// Открываем видео
+document.querySelectorAll('.videos-gallery .gallery-item').forEach(item => {
+    item.style.cursor = 'zoom-in';
+    item.addEventListener('click', () => {
+        const video = item.querySelector('video');
         const src = video.querySelector('source').src;
-        lightboxVideo.querySelector('source')?.remove();
+        while (lightboxVideo.firstChild) lightboxVideo.removeChild(lightboxVideo.firstChild);
         const source = document.createElement('source');
         source.src = src;
         source.type = 'video/mp4';
@@ -222,19 +214,17 @@ document.querySelectorAll('.videos-gallery .gallery-item video').forEach(video =
     });
 });
 
-// Обновляем функцию закрытия — останавливаем видео
-const originalClose = closeLightbox;
-closeLightbox = function() {
+// Закрываем
+function closeLightbox() {
+    lightbox.classList.remove('active');
     lightboxVideo.pause();
     lightboxVideo.style.display = 'none';
     lightboxImg.style.display = 'block';
-    originalClose();
-};
+    document.body.style.overflow = '';
+}
 
-lightboxClose.removeEventListener('click', originalClose);
-lightboxOverlay.removeEventListener('click', originalClose);
 lightboxClose.addEventListener('click', closeLightbox);
 lightboxOverlay.addEventListener('click', closeLightbox);
-
-document.removeEventListener('keydown', e => { if (e.key === 'Escape') originalClose(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+});
