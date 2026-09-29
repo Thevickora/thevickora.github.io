@@ -1503,11 +1503,11 @@ body {
 }
 
 .tools__row--left .tools__track {
-    animation: scroll-left 60s linear infinite;
+    animation: scroll-left 30s linear infinite;
 }
 
 .tools__row--right .tools__track {
-    animation: scroll-right 60s linear infinite;
+    animation: scroll-right 30s linear infinite;
 }
 
 .tools__item {
@@ -1564,10 +1564,10 @@ body {
     }
 
     .tools__row--left .tools__track {
-        animation: scroll-left 40s linear infinite;
+        animation: scroll-left 20s linear infinite;
     }
 
     .tools__row--right .tools__track {
-        animation: scroll-right 40s linear infinite;
+        animation: scroll-right 20s linear infinite;
     }
 }
