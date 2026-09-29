@@ -1073,10 +1073,11 @@ body {
         padding: 3rem 1.5rem;
     }
 
-    .plinks__inner {
-        max-width: 100%;
-        margin: 0;
-    }
+   .plinks__inner {
+    max-width: 90%;
+    margin: 0;
+    padding: 0 1rem;
+}
     
     .plinks__title {
         font-size: 1.1rem;
