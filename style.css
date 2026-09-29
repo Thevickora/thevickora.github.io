@@ -962,12 +962,15 @@ body {
 /* ===== PORTFOLIO LINKS ===== */
 .plinks {
     padding: 6rem 2rem;
-    background: #E64A19;
+    background: url('../images/portfolio-bg.jpg') center center / cover no-repeat;
+    position: relative;
 }
 
 .plinks__inner {
     max-width: 600px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .plinks__title {
@@ -1050,6 +1053,20 @@ body {
     color: rgba(255, 255, 255, 0.75);
 }
 
+/* Desktop: кнопки слева */
+@media (min-width: 769px) {
+    .plinks__inner {
+        max-width: 600px;
+        margin: 0;
+        margin-left: 5%;
+    }
+    
+    .plinks__title {
+        text-align: left;
+    }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
     .plinks {
         padding: 4rem 1rem;
@@ -1058,8 +1075,7 @@ body {
     .plinks__inner {
         max-width: 100%;
     }
-   }
-
+}
  /* ===== EXPERIENCE SECTION ===== */
 
 .experience-section {
